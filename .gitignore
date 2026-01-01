@@ -29,3 +29,46 @@ obj/
 *.bak
 *.log
 
+# add some other common ignores
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Python (якщо будуть скрипти для генерації даних чи аналізу)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+*.env
+
+# Node.js (якщо будуть приклади з ORM чи web-інтеграцією)
+node_modules/
+npm-debug.log*
+
+# Database artifacts (локальні файли бази)
+*.db
+*.sqlite
+*.sqlitedb
+*.mdf
+*.ldf
+*.bak
+*.trn
+*.log
+
+# Dumps (щоб не комітити великі дампи)
+*.sql.gz
+*.dump
+
+# Docker / Terraform / інфраструктура
+*.tfstate
+*.tfstate.backup
+.terraform/
+docker-compose.override.yml
+
+# Misc
+*.tmp
+*.temp
